@@ -3,8 +3,10 @@
 ## What this repo is
 The GitHub profile repo: one README, the public index of the repos. The README is generated from stack-data's repo registry (`data/repos.json`); the footer carries the last-built date.
 
+The full map is `docs/PRODUCT.md`.
+
 ## How to edit
-Fix facts in the registry first, then rebuild the README from it. Hand edits here drift the next time the index is rebuilt.
+Never hand-edit README.md here: it is generated output, and the next regeneration overwrites any edit silently. Fix facts in the registry first, then rebuild the README from it. Intro copy changes belong in `../stack-data/profile/header.md`.
 
 ## Rebuild recipe
 The exact sequence, for a successor or a fresh machine (the retiring-engineer audit asked for this in writing):
