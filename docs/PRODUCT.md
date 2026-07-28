@@ -4,7 +4,9 @@ The GitHub profile repo (risaac09/risaac09). Its single `README.md` renders as I
 
 ## What it is (technical)
 
-One file, `README.md`. There is no code, no `.github/workflows/`, no `.claude/` kit, no CLAUDE.md.
+The public runtime is one file, `README.md`. The repo also carries `CLAUDE.md`
+and this product map so a working session knows that the README is generated.
+There is no code, no `.github/workflows/`, and no tracked `.claude/` kit.
 
 The source of truth lives upstream in `../stack-data`:
 
@@ -39,11 +41,18 @@ Two constraints govern every word that surfaces here:
 
 ## Where it goes (strategic)
 
-Untiered public infra, status active per its registry row (`r-risaac09` in `../stack-data/data/repos.json`, the only place its role is recorded). It is deliberately absent from the phase-zero kit's ten consuming repos listed in `../rubinstein-productions-toolkit/CLAUDE.md`; do not deploy `.claude/` here or add it to `install.sh --all` without a decision upstream.
+Untiered public infra, status active per its registry row (`r-risaac09` in
+`../stack-data/data/repos.json`, the only place its role is recorded). It is
+deliberately absent from the phase-zero kit's consumer list in
+`../rubinstein-productions-toolkit/CLAUDE.md`; do not deploy `.claude/` here
+or remove it from the installer's `NON_CONSUMERS` list without a decision
+upstream.
 
 Gap: whether the regenerate-and-push loop should ever be automated (for example inside stack-data's weekly-sync) is an open decision recorded nowhere; the answer would come from Isaac, weighed against the behavior-before-apparatus corrective in stack-data's CLAUDE.md.
 
-Gap: this repo has no CLAUDE.md, so a Claude session opened here has only the README footer as a hint that the file is generated; whether to add one (the audit's proposed short guardrail file) is Isaac's call.
+`CLAUDE.md` is the short guardrail file. Codex can load it through the global
+`project_doc_fallback_filenames = ["CLAUDE.md"]` setting when no project
+`AGENTS.md` exists.
 
 ## Workflows
 
@@ -56,12 +65,18 @@ Manual, the publish loop, run whenever the registry or intro changes:
 3. Regenerate. In `../stack-data` run `scripts/sd-readme` (no flags; public-only is the default and the requirement). Output lands at `dist/profile-README.md`.
 4. Publish. Copy `../stack-data/dist/profile-README.md` into this repo as `README.md`, commit, push to main. No script performs this step; the generator's final echo names it.
 
-Good looks like: `dist/profile-README.md` and this repo's `README.md` byte-identical, the footer's "Last built" date current, and every listed repo public with a clean description. As of 2026-07-02 the two files match and a fresh run changes only the date line.
+Good looks like: `dist/profile-README.md` and this repo's `README.md`
+byte-identical, the footer's "Last built" date current, and every listed repo
+public with a clean description. As of 2026-07-28 the two files match after a
+live GitHub registry refresh.
 
 ## Known drift
 
-For Isaac to rule on; fixes belong upstream, not in this repo.
+The registry and profile were refreshed from live GitHub state on 2026-07-28.
+`isaacrubinstein.com` is active again, `third-information-lab` is archived,
+and `alchemy-diagnostic` remains archived.
 
-- Freshness: the README footer says "Last built 2026-06-16", sixteen days stale as of 2026-07-02. Content still matches the registry, so this is freshness drift only, but the loop has not run since the late-June registry commits.
-- alchemy-diagnostic: the README lists it as a parked repo, while `../alchemy/CLAUDE.md` says it was consolidated into alchemy on 2026-06-22 and should be archived. The registry row (`gone:false`, status parked) is the stale source; retire the row in `../stack-data/data/repos.json`, then regenerate.
-- three-type-evaluation: the registry marks it PRIVATE, while its own CLAUDE.md and the toolkit's frame it as a public methodology paper. If it went public, the registry row is stale and the repo is missing from this profile page; a one-time `gh` check upstream settles it.
+Open release question: `three-type-evaluation` is still private, so the
+public-only generator excludes it. Its own roadmap frames it as a future
+public methodology paper. Publish it here only after the repository's release
+decision changes its GitHub visibility.

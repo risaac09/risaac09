@@ -13,7 +13,10 @@ The exact sequence, for a successor or a fresh machine (the retiring-engineer au
 
 ```bash
 cd ../stack-data
-bash scripts/sd-readme            # renders dist/profile-README.md, public repos only
+bash scripts/sd-repos             # refreshes GitHub facts and renders dist/profile-README.md
+# Curate any new rows in data/repos.json before the final render.
+bash scripts/sd-readme
+bash scripts/validate.sh
 cp dist/profile-README.md ../risaac09/README.md
 cd ../risaac09
 git diff                          # read it; the registry is the source of truth
