@@ -13,7 +13,7 @@ I build small, no-framework tools and write about the body in the attention econ
 - **[statehouse-dashboard](https://github.com/risaac09/statehouse-dashboard)** · [live](https://risaac09.github.io/statehouse-dashboard/): Plain-language dashboard of state legislature bills and votes. Vanilla JS, no build step, fed by a GitHub Action that pulls and cleans the OpenStates API. `MIT`
 
 ## Methodology & open toolkits
-- **[pureland-fork-kit](https://github.com/risaac09/pureland-fork-kit)**: A facilitation protocol, an openness scorecard, an extraction-check instrument, and a provenance doc, a small, self-contained open-source kit. `CC-BY-SA-4.0`
+- **[pureland-fork-kit](https://github.com/risaac09/pureland-fork-kit)**: An open, testable practice for attention sovereignty, reciprocal information systems, and consent-aware AI. `CC-BY-SA-4.0`
 - **[rubinstein-productions-toolkit](https://github.com/risaac09/rubinstein-productions-toolkit)**: Open-source toolkit for anti-extractive facilitation and film consultancy, methodology, evaluation, outreach automation, prompt engineering, and production tools. `CC-BY-SA-4.0`
 
 ## Research & datasets
@@ -22,6 +22,7 @@ I build small, no-framework tools and write about the body in the attention econ
 
 ## Tools
 - **[alchemy](https://github.com/risaac09/alchemy)** · [live](https://alchemy.rubinsteinproductions.com): An antechamber for your information metabolism `MIT`
+- **[context-provenance](https://github.com/risaac09/context-provenance)**: Four-channel attribution for AI-mediated text. `MIT`
 - **[alchemy-diagnostic](https://github.com/risaac09/alchemy-diagnostic)** `MIT` _(archived)_
 
 <sub>This index is generated from my stack-data repo registry. Last built 2026-08-21.</sub>
