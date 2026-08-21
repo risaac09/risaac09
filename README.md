@@ -14,7 +14,7 @@ I build small, no-framework tools and write about the body in the attention econ
 
 ## Methodology & open toolkits
 - **[pureland-fork-kit](https://github.com/risaac09/pureland-fork-kit)**: A facilitation protocol, an openness scorecard, an extraction-check instrument, and a provenance doc, a small, self-contained open-source kit. `CC-BY-SA-4.0`
-- **[rubinstein-productions-toolkit](https://github.com/risaac09/rubinstein-productions-toolkit)**: Open-source toolkit for anti-extractive facilitation and film consultancy, methodology, evaluation, outreach automation, prompt engineering, and production tools. `MIT`
+- **[rubinstein-productions-toolkit](https://github.com/risaac09/rubinstein-productions-toolkit)**: Open-source toolkit for anti-extractive facilitation and film consultancy, methodology, evaluation, outreach automation, prompt engineering, and production tools. `CC-BY-SA-4.0`
 
 ## Research & datasets
 - **[gene-keys-data](https://github.com/risaac09/gene-keys-data)** · [live](https://risaac09.github.io/gene-keys-data/app/): Open structural dataset for the 64 Gene Keys `CC0-1.0` _(maintenance)_
