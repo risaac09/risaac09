@@ -4,6 +4,12 @@ Facilitator, filmmaker, ultrarunner, builder. I run [Rubinstein Productions](htt
 
 I build small, no-framework tools and write about the body in the attention economy.
 
+## Now: PureLand
+
+[PureLand](https://risaac09.github.io/pureland-fork-kit/) is the project I'm working on. It asks one question: can a way of handling information give you more control over your own attention without also making you easier to exploit?
+
+It is a research-program prototype and a forkable toolbox. Version 0.1. The instruments are unvalidated, and the only record so far is one partial dry run. Start at the [front page](https://risaac09.github.io/pureland-fork-kit/). Fork the [repository](https://github.com/risaac09/pureland-fork-kit) to run the method on a practice of your own. Corrections and field tests are welcome.
+
 ## Sites
 - **[isaacrubinstein.com](https://github.com/risaac09/isaacrubinstein.com)** · [live](https://isaacrubinstein.com): Personal site, independent program evaluation practice `MIT`
 - **[rubinsteinproductions](https://github.com/risaac09/rubinsteinproductions)**: Rubinstein Productions, Voice Lab for mission-driven professionals. Facilitation and film. `MIT`
@@ -25,4 +31,4 @@ I build small, no-framework tools and write about the body in the attention econ
 - **[context-provenance](https://github.com/risaac09/context-provenance)**: Four-channel attribution for AI-mediated text. `MIT`
 - **[alchemy-diagnostic](https://github.com/risaac09/alchemy-diagnostic)** `MIT` _(archived)_
 
-<sub>This index is generated from my stack-data repo registry. Last built 2026-09-01.</sub>
+<sub>This index is generated from my stack-data repo registry. Last built 2026-09-08.</sub>
